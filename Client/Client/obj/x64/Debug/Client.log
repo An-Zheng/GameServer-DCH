@@ -1,0 +1,33 @@
+﻿  正在清理远程项目目录
+  正在验证源
+  正在将源远程复制到“192.168.18.128”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  allmsg.pb.cc
+  main.cpp
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\main.cpp(52,28): warning : comparison of integer expressions of different signedness: ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\main.cpp(52,28): warning :    52 |   if (m_lastBuf.size() - 8 >= len)
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\main.cpp(52,28): warning :       |       ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\main.cpp(114,24): warning : conversion from ‘int’ to ‘uint16_t’ {aka ‘short unsigned int’} may change value [-Wconversion]
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\main.cpp(114,24): warning :   114 |  addr.sin_port = htons(port);
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\main.cpp(114,24): warning :       |                        ^~~~
+  MessageHandler.cpp
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\MessageHandler.cpp(134,10): warning : enumeration value ‘CLIENT_2_GAMESERVER_LOGIN’ not handled in switch [-Wswitch]
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\MessageHandler.cpp(134,10): warning :   134 |   switch (single->m_messageType)
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\MessageHandler.cpp(134,10): warning :       |          ^
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\MessageHandler.cpp(134,10): warning : enumeration value ‘CLIENT_2_GAMESERVER_PLAYERLIST’ not handled in switch [-Wswitch]
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\MessageHandler.cpp(134,10): warning : enumeration value ‘CLIENT_2_GAMESERVER_ATTACK’ not handled in switch [-Wswitch]
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\MessageHandler.cpp(134,10): warning : enumeration value ‘CLIENT_2_GAMESERVER_SENDMSG’ not handled in switch [-Wswitch]
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\MessageHandler.cpp(134,10): warning : enumeration value ‘GAME_MSG_REQUEST_IP’ not handled in switch [-Wswitch]
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\MessageHandler.cpp(134,10): warning : enumeration value ‘GAME_MSG_UPDATEGAMESERVER_INFO_BACK’ not handled in switch [-Wswitch]
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\MessageHandler.cpp(134,10): warning : enumeration value ‘GAME_MSG_UPDATEGAMESERVER_INFO’ not handled in switch [-Wswitch]
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\MessageHandler.cpp(234,28): warning : conversion from ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} to ‘int32_t’ {aka ‘int’} may change value [-Wconversion]
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\MessageHandler.cpp(234,28): warning :   234 |  int32_t len = content.size();
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\MessageHandler.cpp(234,28): warning :       |                ~~~~~~~~~~~~^~
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\MessageHandler.cpp(248,46): warning : comparison of integer expressions of different signedness: ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} and ‘ssize_t’ {aka ‘long int’} [-Wsign-compare]
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\MessageHandler.cpp(248,46): warning :   248 |  if ((0 <= this->m_tcpFD) && (_output.size() == send(this->m_tcpFD, pOut, _output.size(), 0)))
+E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\MessageHandler.cpp(248,46): warning :       |                               ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  正在链接对象
+  Client.vcxproj -> E:\classes\Computer Network\final project\Final project_ZhengAn(G31579743)\Source Code\Client\Client\bin\x64\Debug\Client.out

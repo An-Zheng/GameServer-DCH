@@ -1,0 +1,1 @@
+g++ -o "/root/projects/Client/bin/x64/Debug/Client.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /root/projects/Client/obj/x64/Debug/allmsg.pb.o /root/projects/Client/obj/x64/Debug/main.o /root/projects/Client/obj/x64/Debug/MessageHandler.o -lprotobuf -lpthread

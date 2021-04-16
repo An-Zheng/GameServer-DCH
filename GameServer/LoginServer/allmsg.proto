@@ -1,0 +1,79 @@
+syntax="proto3";
+package pb;//namespace
+
+// ID = 1  CLIENT_2_GAMESERVER_LOGIN  
+message Login{
+    string playername = 1;
+}
+// ID = 2   GAMESERVER_2_CLIENT_LOGINBACK
+message LoginBack{
+     int32  succ  = 1;               // 1 succ  2 fail  
+     PlayerList  playerlist = 2;  
+}
+
+
+// ID = 3 CLIENT_2_GAMESERVER_PLAYERLIST
+message RequestList{
+     int32 id = 1;
+}
+// ID = 4 GAMESERVER_2_CLIENT_PLAYERLISTBACK
+message PlayerList{
+     repeated string playernamelist  = 1;
+}
+
+// ID = 5 GAME_MSG_UPDATEGAMESERVER_INFO_BACK  (login server 2 game server)
+message GameServerInfoBack{
+     int32 succ = 1;
+}
+
+// ID = 6 GAME_MSG_UPDATEGAMESERVER_INFO （game server 2 login server）
+message GameServerInfo{
+     int32 curload = 1;
+     int32 maxload = 2;
+     string IPaddress = 3;
+     int32  portNum = 4;
+}
+
+
+
+
+// ID = 7  GAME_MSG_REQUEST_IP  (Client 2 Login Server)
+message RequestIP{
+     int32 id = 1;
+}
+// ID = 8 GAME_MSG_RESPONSE_IP  (Login Server 2 Client)
+message ResponseIP{
+     string IPaddress = 1;
+     int32  portNum = 2;
+}
+
+// ID = 9  request battle  (Client 2 game server)
+message AttackRequest{
+     string offendername = 1;
+     string attackername = 2;
+}
+
+// ID = 10 response battle   (Game Server 2 Client)
+message AttackResponse{
+     int32 issucc = 1;
+}
+// ID = 11 Chat      (Client 2 game server)
+message Chat{
+     string msg  	      = 1;
+     string receivername = 2;
+     string sendername   = 3;
+} 
+// ID = 12 ChatBack   (Game Server 2 Client)
+message ChatBack{
+     int32 succ = 1; //1 succ 2. didn't find player name
+}
+
+// ID = 13 ReceiveChat  (Game Server 2 Client)
+message ReceiveChat{
+     string sendername = 1;
+     string  msg = 2;
+}
+
+
+
+

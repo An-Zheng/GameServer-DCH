@@ -1,0 +1,59 @@
+syntax="proto3";
+package pb;
+//无关选项，用于客户端c#指定命名空间
+
+// ID = 1 登录请求
+message Login{
+    string playername = 1;
+}
+// ID = 3 请求服务器玩家列表
+message RequestList{
+     int32 id = 1;
+}
+// ID = 4  返回服务器玩家列表
+message PlayerList{
+     repeated string playernamelist  = 1;
+}
+// ID = 2   登陆返回
+message LoginBack{
+     int32  succ  = 1;               // 1 成功  2 是失败  
+     PlayerList  playerlist = 2;  
+}
+
+
+// ID = 6 更新服务器负载情况 （game server 2 login server）
+message GameServerInfo{
+     int32 curload = 1;
+     int32 maxload = 2;
+     string IPaddress = 3;
+     int32  portNum = 4;
+}
+
+// ID = 5 是否更新成功
+message GameServerInfoBack{
+     int32 succ = 1;
+}
+
+
+
+// ID = 7 请求 game server ipaddress
+message RequestIP{
+     int32 id = 1;
+}
+// ID = 8 返回 game server ipaddress
+message ResponseIP{
+     string IPaddress = 1;
+     int32  portNum = 2;
+}
+
+// ID = 9 請求戰鬥
+message AttackRequest{
+     string offendername = 1;
+     string attackername = 2;
+}
+
+// ID = 10 返回戰鬥結果 
+message AttackResponse{
+     int32 issucc = 1;
+
+}
